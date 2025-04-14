@@ -1,4 +1,4 @@
-const socket = io("https://your-backend-url.onrender.com"); // Change to your backend
+const socket = io("https://video-chat-backend-w52a.onrender.com"); // Change to your backend
 
 const localVideo = document.getElementById("localVideo");
 const remoteVideo = document.getElementById("remoteVideo");
