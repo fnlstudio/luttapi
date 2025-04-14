@@ -15,6 +15,7 @@ app.get("/", (req, res) => {
 io.on("connection", (socket) => {
   console.log("New user connected");
 
+  // Signaling for WebRTC
   socket.on("offer", (data) => socket.broadcast.emit("offer", data));
   socket.on("answer", (data) => socket.broadcast.emit("answer", data));
   socket.on("ice", (data) => socket.broadcast.emit("ice", data));
